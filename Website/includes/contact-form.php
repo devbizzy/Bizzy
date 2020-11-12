@@ -1,7 +1,7 @@
 <?php
 
 $mail_host = "dev.bizzy@gmail.com";
-$mail_title = "[BIZZY] Contact Form Message";
+$mail_title = "[Personal Website] Contact Form Message";
 
 define("MAIL_HOST", $mail_host);
 define("MAIL_TITLE", $mail_title);
@@ -34,9 +34,9 @@ if (isset($_POST['message'])) {
 }
 
 
-if( isset($_POST['name']) && isset($_POST['email']) && isset($_POST['message']) ){
+if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['message'])) {
     $headers = "From: $email_from\nMIME-Version: 1.0\nContent-type: text/html; charset=iso-8859-1\n";
-    if( mail($email_from, $mail_title, $mail_body, $headers) ) {
+    if (mail($email_from, $mail_title, $mail_body, $headers)) {
         $serialized_data = '{"type":1, "message":"Contact form successfully submitted. Thank you, I will get back to you soon!"}';
         echo $serialized_data;
     } else {
@@ -44,5 +44,3 @@ if( isset($_POST['name']) && isset($_POST['email']) && isset($_POST['message']) 
         echo $serialized_data;
     }
 };
-
-?>

@@ -558,19 +558,21 @@
                             </div>
                         </div>
                         <div class="col-lg-8">
-                            <form class="form-contact js-contact-form" method="POST" action="#">
+                            <form class="form-contact js-contact-form" method="POST" action="/Website/includes/contact-form.php">
                                 <div class="form-row no-gutters">
                                     <div class="col-md-6">
-                                        <input class="au-input" type="text" name="name" placeholder="Name"
+                                        <input class="au-input" type="text" name="name" id="name" placeholder="Name"
                                             required="required">
-                                        <input class="au-input" type="email" name="email" placeholder="Email Address"
+
+                                        <input class="au-input" type="email" name="email" id="email" placeholder="Email Address"
                                             required="required" pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}">
-                                        <input class="au-input" type="text" name="phone" placeholder="Phone"
-                                            required="required">
+
+                                        <input class="au-input" type="text" name="phone" id="phone" placeholder="Phone">
                                     </div>
                                     <div class="col-md-6 p-r-0">
-                                        <textarea class="au-textarea" name="message" placeholder="Message*"
+                                        <textarea class="au-textarea" name="message" id="message placeholder="Message"
                                             required="required"></textarea>
+
                                         <div class="text-right">
                                             <button class="au-btn au-btn--solid" type="submit">Send message</button>
                                         </div>
