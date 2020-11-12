@@ -1,0 +1,14 @@
+{
+    "name": "bizzy",
+    "description": "personal website",
+    "authors": "bizzy",
+    "version": "0.0.1",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "dependencies": {
+        "express": "^4.17.1"
+    },
+    "author": "Bisrat Tadesse",
+    "license": "ISC"
+}
