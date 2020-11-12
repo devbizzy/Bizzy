@@ -29,7 +29,7 @@
                     },
                     statusCode: {
                         404: function () {
-                            swal("Oops", "Sorry, Mail Server Costs Too Much :.)", "error");
+                            swal("Oops", "Sorry, Can't Get The Mail Server To Work :( ", "error");
                         }
                     },
                     error: function (jqXHR, textStatus, errorThrown) {
