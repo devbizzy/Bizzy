@@ -29,7 +29,7 @@
                     },
                     statusCode: {
                         404: function () {
-                            swal("Oops", "File Not Found!", "error");
+                            swal("Oops", "Sorry, Mail Server Costs Too Much :.)", "error");
                         }
                     },
                     error: function (jqXHR, textStatus, errorThrown) {
